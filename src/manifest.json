@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Finger Extension",
+  "version": "0.3",
+
+  "default_locale": "en",
+  "description": "Add finger pointer to a site for demonstrating mobile UI designs",
+  "default_locale":"en",
+ "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["finger.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions":[
+      "contextMenus",
+      "tabs",
+      "http://*/*",
+      "https://*/*"
+      ],
+  "icons":{
+      "16":"16x16.png",
+      "128":"128x128.png"
+  },
+  "web_accessible_resources": [
+    "images/*.png"
+  ]
+}

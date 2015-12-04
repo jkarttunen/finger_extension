@@ -1,0 +1,17 @@
+{
+  "name": "finger_extension",
+  "version": "0.0.1",
+  "description": "Finger extension pointer for chrome",
+  "main": "index.js",
+  "scripts": {
+    "pack": "node_modules/.bin/crx pack src -o dist/finger_extension.crx",
+    "prezip": "npm run pack",
+    "zip": "node_modules/.bin/crx pack src -p src/key.pem --zip-output dist/finger_extension.zip",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "crx": "^3.0.3"
+  }
+}
