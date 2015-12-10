@@ -3,4 +3,5 @@ node_modules
 *.pem
 *.crx
 *.zip
-.DS_store
+.DS_Store
+./src/images/.DS_Store
