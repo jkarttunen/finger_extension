@@ -1,6 +1,6 @@
 {
   "name": "finger_extension",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "Finger extension pointer for chrome",
   "main": "index.js",
   "scripts": {
