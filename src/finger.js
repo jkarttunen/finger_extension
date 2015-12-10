@@ -11,6 +11,6 @@ body.appendChild(img);
 
 body.addEventListener('mousemove', function(o) {
     var sormi = document.getElementById('sormi');
-    sormi.style.left= o.clientX + 1 + 'px';
+    sormi.style.left= o.clientX + 3 + 'px';
     sormi.style.top= o.clientY - 300 + 'px';
 });
